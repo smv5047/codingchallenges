@@ -47,7 +47,6 @@ const pets = [
   ];
   
   function sumPetYears(arr, kind, multiply) {
-    let newAge = [];
     let filteredPets = arr.filter(pet => {
       return pet.species.includes(kind);
     })
