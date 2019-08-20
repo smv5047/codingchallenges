@@ -1,41 +1,32 @@
 // Your code here.
 
 function deepEqual (obj1, obj2) {
-    if (typeof obj1 == 'object' && obj1 !== null) {
-      if(Object.keys(obj1) === Object.keys(obj2)) {
-        x = Object.values(obj1)
-        y = Object.values(obj2)
-        for (let i=0; i<x.length; i++) {
-          if (x[i] !== y[i]){
-            return false
-          }
-        }
-         return true
-       } else if (x === y) {
-           return true
-         } else {
-         return false
-         }
-    } else {
-      return false
+    if (obj1 === obj2) {
+        return true
     }
+    if (typeof obj1 !== 'object' || obj1 == null || typeof obj2 !== 'object' || obj2 == null) {
+        return false
     }
-      else if (obj1 === obj2) {
-      return true
-    } else {
-      return false
-    }
+
+    let obj1Keys = Object.keys(obj1)
+    let obj2Keys = Object.keys(obj2)
+
+      if(obj1Keys != obj2Keys) {
+          return false
+      }
 }
 
+// let keysA = Object.keys(a), keysB = Object.keys(b);
+
+// if (keysA.length != keysB.length) return false;
+
+// for (let key of obj1Keys) {
+//   if (!obj2Keys.includes(key) || !deepEqual(obj1[key], obj2[key])) return false;
+// }
+
+// return true;
+
   
-  //  if (obj1 === obj2) {
-  //    return true
-  //  } else if (Object.keys(obj1) == Object.keys(obj2) ){
-  //    return true
-  //  }
-  //  else {
-  //    return false
-  //  }
   
   let obj = {here: {is: "an"}, object: 2};
   console.log(deepEqual(obj, obj));
