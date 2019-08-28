@@ -23,6 +23,7 @@ class Stack {
     }
 }
 
+//Test to ensure function is working properly
 const myStack = new Stack();
 console.log(myStack.numOfItems()); // <--- "There are no items in your Stack."
 myStack.add('first');
