@@ -14,4 +14,4 @@ function vowelCount(str) {
   }
   
   
-  vowelCount("Hello World")
+  console.log(vowelCount("Hello World"));
