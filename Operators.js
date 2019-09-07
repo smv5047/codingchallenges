@@ -8,52 +8,102 @@
 // Hint: divide should drop the remainder.
 // NOTE: the test suite will check to see if you are using the * / or % operators. This test will fail if you have commented out code within your functions.
 
+
+
+
 function negCheck (num1, num2) {
     if (num1 <0  || num2<0){
       if (num1 <0 && num2<0){
-        return [false, num1, num2]
+        return [false, -num1, -num2]
       } else {
-        return [true, num1, num2]
+        if (num1<0) {
+          return [true, -num1, num2]
+        } else {
+        return [true, num1, -num2]
+        }
       }
     } else {
       return [false, num1, num2]
     }
    }
+
+
+
    
    function multiply(x, y) {
      const arr = negCheck(x, y);
      let z = 0
-     if (arr === true) {
-       for (i=0; i<y; i++){
-         z = z + x
+     for (i=0; i<arr[2]; i++){
+         z = z + arr[1]
        }
+     if (arr[0] === true) {
+       return -z
+     }  else {
        return z
      }
-       else {
-         for (i=0; i<y; i++){
-         z = z + x
-       }
-       return z
-       }
-     }
+   }
      
+
+
+
    
    function divide(x, y) {
      const arr = negCheck(x, y);
-     
+     let count =0 
+     for (i=arr[1]; i>=arr[2]; i=i-arr[2]){
+       count = count +1
+     }
+   
+     if (arr[0] === true) {
+       return -count
+     }  else {
+       return count
+     }
    }
    
+
+
+
    function modulo(x, y) {
      const arr = negCheck(x, y);
-     
+      let count = 0
+       let a = arr[1]
+       let b = arr[2]
+       for (i=arr[1]; i>=arr[2]; i=i-arr[2]){
+       a=a-b 
+       count = count +1
+     }
+     if (arr[0] === true) {
+       if ( x<0){
+       return -a
+       }else {
+         return a
+       }
+     }  else {
+      if ( x<0){
+       return -a
+       }else {
+         return a
+       }
    }
+   }
+
    
-   console.log(negCheck(12, 34)); //   <--- [ false, 12, 34 ]
-   console.log(negCheck(-12, 34)); //  <--- [ true, 12, 34 ]
-   console.log(negCheck(12, -34)); //  <--- [ true, 12, 34 ]
-   console.log(negCheck(-12, -34)); // <--- [ false, 12, 34 ]
-   console.log(multiply(3, 4)); //     <--- 12
-   console.log(multiply(-3, 4)); //    <--- -12
-   console.log(multiply(3, -4)); //    <--- -12
-   console.log(multiply(-3, -4)); //   <--- 12
    
+   console.log(negCheck(12, 34)); 
+   console.log(negCheck(-12, 34)); 
+   console.log(negCheck(12, -34)); 
+   console.log(negCheck(-12, -34)); 
+   console.log(multiply(3, 4)); 
+   console.log(multiply(-3, 4)); 
+   console.log(multiply(3, -4)); 
+   console.log(multiply(-3, -4)); 
+   console.log(divide(10, 3)); 
+   console.log(divide(-10, 3));
+   console.log(divide(10, -3)); 
+   console.log(divide(-10, -3));
+   console.log(divide(-25, -5))
+   console.log(modulo(10, 3));
+   console.log(modulo(-10, 3));
+   console.log(modulo(10, -3)); 
+   console.log(modulo(-10, -3)); 
