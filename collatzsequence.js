@@ -29,4 +29,4 @@ function collatzSequence(n) {
     return chain
   }
   
-  console.log(collatzSequence(23))
+  console.log(collatzSequence(23)) // 
