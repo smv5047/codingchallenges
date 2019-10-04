@@ -2,8 +2,10 @@
 
 // toBinaryString(6) should return "110" (no leading 0).
 
+
 // Use of the native method number.toString(2);  is disallowed.
 
+//Update
 function toBinaryString(number) {
  
     let binaryString = "0"
