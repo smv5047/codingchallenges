@@ -5,9 +5,6 @@
 
 // Use of the native method number.toString(2);  is disallowed.
 
-//Need to Complete
-
-//Update
 function toBinaryString(number) {
  
     let binaryString = "0"
