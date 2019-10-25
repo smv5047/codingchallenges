@@ -28,5 +28,3 @@ function toBinaryString(number) {
   
   
   console.log(toBinaryString(5));  // <--- 101
-
-  //Update response tomorrow
