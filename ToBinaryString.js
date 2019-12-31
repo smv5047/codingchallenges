@@ -21,6 +21,7 @@ function toBinaryString(number) {
 
   
   return binaryString
+  
 }
 
 
