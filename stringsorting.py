@@ -31,3 +31,5 @@ alphapetical_sort(test_array)
 
 def middle_sort(array):
     # return middle character
+    # determin halfway point
+    # return middle character
