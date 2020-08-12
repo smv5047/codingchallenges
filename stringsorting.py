@@ -33,4 +33,5 @@ def middle_sort(array):
 
     # return middle character
     # determin halfway point
+    # sort based on mid character
     # return middle character
