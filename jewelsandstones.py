@@ -16,19 +16,39 @@
 # S and J will consist of letters and have length at most 50.
 # The characters in J are distinct.
 
-class Solution:
-    def numJewelsInStones(self, J: str, S: str) -> int:
-        # naive solution
-        # nested for loops
-        incrementer = 0
-        for char_j in J:
-            for char_s in S:
-                if char_j == char_s:
-                    incrementer += 1
-        return incrementer
-
-
 #Input - Str
 #Output - Int
 
 # count how many times each character in J appears in S
+class Solution:
+    def numJewelsInStones(self, J: str, S: str) -> int:
+
+        # naive solution
+        # nested for loops
+        # O(n^2)
+        # incrementer = 0
+        # for char_j in J:
+        #     for char_s in S:
+        #         if char_j == char_s:
+        #             incrementer += 1
+        # return incrementer
+
+        # O(n)
+        # nonnaive
+        # create hashtable
+        # keys  = chars from S
+        # value = # of occurences
+
+        jewels_dict = {}
+
+        for char_j in J:
+            jewels_dict[char_j] = 0
+
+        for char_s in S:
+            if char_s in jewels_dict:
+                count += 1
+
+        # for values in jewels_dict.values():
+        #     count += values
+
+        return count
