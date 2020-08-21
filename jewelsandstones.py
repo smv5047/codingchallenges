@@ -24,6 +24,7 @@ class Solution:
     def numJewelsInStones(self, J: str, S: str) -> int:
 
         # naive solution
+        # performed this first
         # nested for loops
         # O(n^2)
         # incrementer = 0
