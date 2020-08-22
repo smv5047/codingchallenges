@@ -25,7 +25,6 @@ word_graph = {
     'hot': {'hit', 'hat', 'cot'},
     'cog': {'cot'},
     'cot': {'cog'}
-
 }
 
 
