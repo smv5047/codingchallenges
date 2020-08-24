@@ -2,6 +2,7 @@
 # return the shortest transformation sequence from begin_word to end_word, such that:
 # Only one letter can be changed at a time.
 # Each transformed word must exist in the word list. Note that begin_word is not a transformed word.
+
 # Note:
 # Return None if there is no such transformation sequence.
 # All words contain only lowercase alphabetic characters.
@@ -17,6 +18,7 @@
 # beginWord = "hungry"
 # endWord = "happy"
 # None
+
 
 word_graph = {
     'hit': {'hat', 'hot'},
