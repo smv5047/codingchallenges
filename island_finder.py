@@ -10,6 +10,7 @@ islands = [[0, 1, 0, 1, 0],
            [1, 1, 0, 0, 0]]
 
 
+# create depth first raversal
 def dft(starting_row, starting_column, island_matrix, visted):
     pass
 
