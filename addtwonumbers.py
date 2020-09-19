@@ -4,8 +4,6 @@ class ListNode:
         self.val = val
         self.next = next
 
-# Add two linked list into one, and add all values together
-
 
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
