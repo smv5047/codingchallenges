@@ -1,5 +1,5 @@
 class Solution:
-    def removeDuplicates(self, nums) -> int:
+    def removeDuplicates(self, nums):
         # iterate over array
 
         # if value of i is equal to i+1, move i+1 to the end of the array
