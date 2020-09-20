@@ -1,5 +1,5 @@
 class Solution:
-    def removeDuplicates(self, nums: List[int]) -> int:
+    def removeDuplicates(self, nums) -> int:
         # iterate over array
 
         # if value of i is equal to i+1, move i+1 to the end of the array
@@ -10,7 +10,6 @@ class Solution:
         #         i+=2
         #     else:
         #         i+=1
-
         for i, num in enumerate(nums):
             if i < (len(nums)-1):
                 if (nums[i] > nums[i+1]):
