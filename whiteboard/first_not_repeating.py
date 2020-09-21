@@ -1,3 +1,6 @@
+# return first not repeating character
+# use hash table
+
 def first_not_repeating_character(s):
     # create empty dict
     characters = {}
