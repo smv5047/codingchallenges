@@ -2,6 +2,7 @@
 # Remove any duplicate values from the linked list
 # return the head node
 # had issues with removing the tail
+# TODO review linked list manipulation
 
 # Singly-linked lists are already defined with this interface:
 # class ListNode(object):
